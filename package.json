@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "dev:mock": "cross-env PET_MOCK=mock npm run dev"
   },
   "author": "Carlos Coto",
   "license": "ISC",
@@ -14,6 +15,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
+    "cross-env": "^5.2.0",
     "eslint": "^6.0.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.0",
